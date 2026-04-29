@@ -3,6 +3,7 @@ import { addTodo, deleteTodo } from "./todoSlice.js";
 import { useState } from "react";
 
 const Todo=()=>{
+    //parameters for input and setInput to manage the state of the input field, dispatch to send actions to the Redux store, and todos to access the current list of todos from the Redux state.
     const [input, setInput] = useState("");
     const dispatch = useDispatch();
     const todos = useSelector((state) => state.todo.todos);
